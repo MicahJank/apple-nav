@@ -31,7 +31,7 @@ const NavBar = () => {
     return (
         <NavContainer>
              <NavLink exact to={'/'}> <StyledLink content={'apple-icon'}/> </NavLink>
-             <NavLink exact to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
+             <NavLink to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
              <NavLink to={'/ipad'}> <StyledLink content={'ipad'}/></NavLink>
              <NavLink to={'/iphone'}> <StyledLink content={'iphone'}/></NavLink>
              <NavLink to={'/watch'}> <StyledLink content={'watch'}/></NavLink>
