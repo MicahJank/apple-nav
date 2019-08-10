@@ -16,6 +16,7 @@ import Watch from './items/Watch.js';
 const SubNavContainer = styled.div`
     background-color: #F7F7F7;
     padding: 10px;
+
 `;
 
 // GSAP animation funtion - will be called inside the SubNavItems because i want it to run everytime the SubNavItems is called. "component" is the item i want to animate

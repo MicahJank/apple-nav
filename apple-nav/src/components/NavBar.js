@@ -23,13 +23,22 @@ const NavContainer = styled.div`
   justify-content: space-between;
   align-items: baseline;
   background-color: #323232;
+
+  a {
+    color: #FAFAFA;
+    transition: color 0.3s;
+  }
+
+  a.active {
+    color: #B7B7B7;
+  }
 `;
 
 const NavBar = () => {
 
 
     return (
-        <NavContainer>
+        <NavContainer className='nav-container'>
              <NavLink exact to={'/'}> <StyledLink content={'apple-icon'}/> </NavLink>
              <NavLink to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
              <NavLink to={'/ipad'}> <StyledLink content={'ipad'}/></NavLink>

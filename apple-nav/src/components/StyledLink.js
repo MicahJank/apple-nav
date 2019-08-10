@@ -11,14 +11,13 @@ import { faApple } from '@fortawesome/free-brands-svg-icons';
 import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
 const StyledNavLink = styled.div`
-    color: #FAFAFA;
     font-size: 1rem;
     padding: 12px 22px;
     transition: color 0.3s;
     
     :hover {
         color: #B7B7B7;
-        transition: color 0.3s;
+        transition: color 0.1s;
     }
 `;
 
