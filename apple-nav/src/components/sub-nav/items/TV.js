@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 
-const Mac = () => {
+const TV = (props) => {
 
     return (
         <div>
-            Mac
+            TV
         </div>
     );
 };
 
-export default Mac;
+export default TV;
