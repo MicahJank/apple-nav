@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+import { Tween } from 'react-gsap';
+
 import styled from 'styled-components';
 
 import Mac from './items/Mac.js';
@@ -15,6 +17,13 @@ const SubNavContainer = styled.div`
     background-color: #F7F7F7;
     padding: 10px;
 `;
+
+// GSAP animation funtion - will be called inside the SubNavItems because i want it to run everytime the SubNavItems is called. "component" is the item i want to animate
+const Animation = (component) => (
+    <Tween from={{x: '100px'} } duration={2}>
+        {component}
+    </Tween>
+);
 
 const SubNav = (props) => {
 
@@ -47,6 +56,7 @@ const SubNav = (props) => {
 
     return(
         <SubNavContainer>
+            
             {SubNavItems()}
         </SubNavContainer>
     );

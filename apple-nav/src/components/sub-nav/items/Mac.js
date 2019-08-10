@@ -2,6 +2,8 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+import { Tween } from 'react-gsap';
+
 import styled from 'styled-components';
 
 //imgs
@@ -39,10 +41,18 @@ const Item = styled.li`
     }
 `;
 
+const Animation = (component) => (
+    <Tween from={{x: '100px'} } duration={2}>
+        {component}
+    </Tween>
+);
+
 const Mac = (props) => {
 
     return (
+        
         <ItemsContainer>
+            <Tween from={{x: '100px'} } duration={0.5}>
             <Item>
                 <img src={Air} alt='macbook air' />
                 <span>MacBook Air</span>
@@ -83,6 +93,7 @@ const Mac = (props) => {
                 <img src={Accessories} alt='accessories for mac' />
                 <span>Accessories</span>
             </Item>
+            </Tween>
         </ItemsContainer>
     );
 };
