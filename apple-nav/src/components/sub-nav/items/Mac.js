@@ -5,12 +5,22 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 
+const ItemsContainer = styled.ul`
+
+`;
+
+const Item = styled.li`
+
+`;
+
 const Mac = (props) => {
 
     return (
-        <div>
-            Mac
-        </div>
+        <ItemsContainer>
+            <Item>
+                
+            </Item>
+        </ItemsContainer>
     );
 };
 

@@ -21,7 +21,6 @@ const SubNav = (props) => {
     //TODO - Depending on which navlink is clicked in the navbar a different subcomponent should pop up with different icons that represent the sub component.
 
     const SubNavItems = () => {
-        let SubNavElement = '';
         switch(props.history.location.pathname) {
             case '/mac':
                 return (<Mac />);
