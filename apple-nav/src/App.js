@@ -4,7 +4,7 @@ import { Route, NavLink } from 'react-router-dom';
 
 import styled from 'styled-components';
 import NavBar from './components/NavBar.js';
-import SubNav from './components/sub-nav/SubNav-Mac.js';
+import SubNav from './components/sub-nav/SubNav.js';
 
 import './App.css';
 

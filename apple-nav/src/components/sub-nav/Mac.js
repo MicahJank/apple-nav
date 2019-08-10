@@ -2,15 +2,16 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+import styled from 'styled-components';
 
-const SubNavMac = () => {
 
-    return(
+const Mac = () => {
 
+    return (
         <div>
-            This is the Sub Nav for the Mac menu!
+            Mac
         </div>
     );
 };
 
-export default SubNavMac;
+export default Mac;
