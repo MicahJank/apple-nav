@@ -13,7 +13,7 @@ import Watch from './items/Watch.js';
 
 const SubNavContainer = styled.div`
     background-color: #F7F7F7;
-    padding: 50px;
+    padding: 10px;
 `;
 
 const SubNav = (props) => {
