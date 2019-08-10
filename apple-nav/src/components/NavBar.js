@@ -30,17 +30,16 @@ const NavBar = () => {
 
     return (
         <NavContainer>
-             <NavLink> <StyledLink content={'apple-icon'}/> </NavLink>
-             <NavLink> <StyledLink content={'mac'}/></NavLink>
-             <NavLink> <StyledLink content={'ipad'}/></NavLink>
-             <NavLink> <StyledLink content={'iphone'}/></NavLink>
-             <NavLink> <StyledLink content={'watch'}/></NavLink>
-             <NavLink> <StyledLink content={'tv'}/></NavLink>
-             <NavLink> <StyledLink content={'music'}/></NavLink>
-             <NavLink> <StyledLink content={'support'}/></NavLink>
-             <NavLink> <StyledLink content={'search-icon'}/></NavLink>
-             <NavLink> <StyledLink content={'bag-icon'}/></NavLink>
-           
+             <NavLink to={'/'}> <StyledLink content={'apple-icon'}/> </NavLink>
+             <NavLink to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
+             <NavLink to={'/ipad'}> <StyledLink content={'ipad'}/></NavLink>
+             <NavLink to={'/iphone'}> <StyledLink content={'iphone'}/></NavLink>
+             <NavLink to={'/watch'}> <StyledLink content={'watch'}/></NavLink>
+             <NavLink to={'/tv'}> <StyledLink content={'tv'}/></NavLink>
+             <NavLink to={'/music'}> <StyledLink content={'music'}/></NavLink>
+             <NavLink to={'/support'}> <StyledLink content={'support'}/></NavLink>
+             <NavLink to={'/search'}> <StyledLink content={'search-icon'}/></NavLink>
+             <NavLink to={'/shop'}> <StyledLink content={'bag-icon'}/></NavLink>     
         </NavContainer>
        
   
