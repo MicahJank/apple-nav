@@ -14,7 +14,7 @@ import SearchIcon from './NavBar-Imgs/search_image_large.png';
 import BagIcon from './NavBar-Imgs/shopping_bag_image_large.svg';
 
 const StyledNavLink = styled.div`
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: filter 0.3s;
     filter:brightness(100%);
     
@@ -32,9 +32,7 @@ const StyledNavLink = styled.div`
 
 const Icon = styled.div`
     font-size: 1.3rem;
-
-  
-
+    
     .bag {
         position: relative;
         top: 6px;

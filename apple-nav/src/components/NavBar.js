@@ -24,7 +24,7 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: #323232;
+  background-color: ${props => props.NavColor === 'black' ? 'black' : '#323232'}
 
   a {
     color: #FAFAFA;
@@ -36,11 +36,12 @@ const NavContainer = styled.div`
   }
 `;
 
-const NavBar = () => {
+const NavBar = (props) => {
 
+  const NavColor = props.history.location.pathname === '/iphone' ? 'black' : 'normal';
 
     return (
-        <NavContainer className='nav-container'>
+        <NavContainer NavColor={NavColor} className='nav-container'>
              <NavLink exact to={'/'}> <StyledLink content={'apple-icon'}/> </NavLink>
              <NavLink to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
              <NavLink to={'/ipad'}> <StyledLink content={'ipad'}/></NavLink>
