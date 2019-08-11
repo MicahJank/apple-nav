@@ -7,15 +7,15 @@ import { Tween } from 'react-gsap';
 import styled from 'styled-components';
 
 //imgs
-import IphoneXs from './item-imgs/iphone-imgs/iphone-xs.png';
-import IphoneXr from './item-imgs/iphone-imgs/iphone-xr.png';
-import Iphone8 from './item-imgs/iphone-imgs/iphone-8.png';
-import Iphone7 from './item-imgs/iphone-imgs/iphone-7.png';
-import Compare from './item-imgs/iphone-imgs/compare-iphone.png';
-import AppleCard from './item-imgs/iphone-imgs/apple-card.png';
-import AirPods from './item-imgs/iphone-imgs/air-pods.png';
-import Accessories from './item-imgs/iphone-imgs/accessories-iphone.png';
-import IOS from './item-imgs/iphone-imgs/ios.png';
+import IphoneXs from './item-imgs/iphone-imgs/iphone-xs.svg';
+import IphoneXr from './item-imgs/iphone-imgs/iphone-xr.svg';
+import Iphone8 from './item-imgs/iphone-imgs/iphone-8.svg';
+import Iphone7 from './item-imgs/iphone-imgs/iphone-7.svg';
+import Compare from './item-imgs/iphone-imgs/compare-iphone.svg';
+import AppleCard from './item-imgs/iphone-imgs/apple-card.svg';
+import AirPods from './item-imgs/iphone-imgs/air-pods.svg';
+import Accessories from './item-imgs/iphone-imgs/accessories-iphone.svg';
+import IOS from './item-imgs/iphone-imgs/ios.svg';
 
 const ItemsContainer = styled.ul`
     display: flex;
@@ -28,6 +28,11 @@ const Item = styled.li`
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    height: 60px;
+
+    img {
+        height: 100%;
+    }
 
     span {
         font-size: 0.7rem;

@@ -7,14 +7,14 @@ import { Tween } from 'react-gsap';
 import styled from 'styled-components';
 
 //imgs
-import Air from './item-imgs/mac-imgs/macbook-air.png';
-import Pro from './item-imgs/mac-imgs/macbook-pro.png';
-import Imac from './item-imgs/mac-imgs/iMac.png';
-import MacPro from './item-imgs/mac-imgs/mac-pro.png';
-import Mini from './item-imgs/mac-imgs/mac-mini.png';
-import Compare from './item-imgs/mac-imgs/compare.png';
-import Display from './item-imgs/mac-imgs/pro-display.png';
-import Accessories from './item-imgs/mac-imgs/accessories.png';
+import Air from './item-imgs/mac-imgs/macbook-air.svg';
+import Pro from './item-imgs/mac-imgs/macbook-pro.svg';
+import Imac from './item-imgs/mac-imgs/iMac.svg';
+import MacPro from './item-imgs/mac-imgs/mac-pro.svg';
+import Mini from './item-imgs/mac-imgs/mac-mini.svg';
+import Compare from './item-imgs/mac-imgs/compare.svg';
+import Display from './item-imgs/mac-imgs/pro-display.svg';
+import Accessories from './item-imgs/mac-imgs/accessories.svg';
 
 
 
@@ -22,6 +22,7 @@ const ItemsContainer = styled.ul`
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    
 `;
 
 const Item = styled.li`
@@ -29,6 +30,11 @@ const Item = styled.li`
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    height: 60px;
+
+    img {
+        height: 100%;
+    }
 
     span {
         font-size: 0.7rem;

@@ -7,15 +7,15 @@ import { Tween } from 'react-gsap';
 import styled from 'styled-components';
 
 //imgs
-import IpadPro from './item-imgs/ipad-imgs/ipad-pro.png';
-import IpadAir from './item-imgs/ipad-imgs/ipad-air.png';
-import IpadNormal from './item-imgs/ipad-imgs/ipad.png';
-import IpadMini from './item-imgs/ipad-imgs/ipad-mini.png';
-import Compare from './item-imgs/ipad-imgs/compare-ipad.png';
-import Pencil from './item-imgs/ipad-imgs/pencil.png';
-import Keyboard from './item-imgs/ipad-imgs/smart-keyboard.png';
-import Accessories from './item-imgs/ipad-imgs/accessories-ipad.png';
-import IOS from './item-imgs/ipad-imgs/ios.png';
+import IpadPro from './item-imgs/ipad-imgs/ipad-pro.svg';
+import IpadAir from './item-imgs/ipad-imgs/ipad-air.svg';
+import IpadNormal from './item-imgs/ipad-imgs/ipad.svg';
+import IpadMini from './item-imgs/ipad-imgs/ipad-mini.svg';
+import Compare from './item-imgs/ipad-imgs/compare-ipad.svg';
+import Pencil from './item-imgs/ipad-imgs/pencil.svg';
+import Keyboard from './item-imgs/ipad-imgs/smart-keyboard.svg';
+import Accessories from './item-imgs/ipad-imgs/accessories-ipad.svg';
+import IOS from './item-imgs/ipad-imgs/ios.svg';
 
 const Animation = (component) => (
     <Tween from={{x: '100px'} } duration={2}>
@@ -34,6 +34,11 @@ const Item = styled.li`
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    height: 60px;
+
+    img {
+        height: 100%;
+    }
 
     span {
         font-size: 0.7rem;

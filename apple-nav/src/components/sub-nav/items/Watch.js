@@ -7,14 +7,14 @@ import { Tween } from 'react-gsap';
 import styled from 'styled-components';
 
 //imgs
-import Watch4 from './item-imgs/watch-imgs/watch-4.png';
-import WatchNike from './item-imgs/watch-imgs/watch-nike.png';
-import WatchHermes from './item-imgs/watch-imgs/watch-hermes.png';
-import Watch3 from './item-imgs/watch-imgs/watch-3.png';
-import WatchOs from './item-imgs/watch-imgs/watch-os.png';
-import Bands from './item-imgs/watch-imgs/bands.png';
-import Accessories from './item-imgs/watch-imgs/accessories-watch.png';
-import Compare from './item-imgs/watch-imgs/compare-watch.png';
+import Watch4 from './item-imgs/watch-imgs/watch-4.svg';
+import WatchNike from './item-imgs/watch-imgs/watch-nike.svg';
+import WatchHermes from './item-imgs/watch-imgs/watch-hermes.svg';
+import Watch3 from './item-imgs/watch-imgs/watch-3.svg';
+import WatchOs from './item-imgs/watch-imgs/watch-os.svg';
+import Bands from './item-imgs/watch-imgs/bands.svg';
+import Accessories from './item-imgs/watch-imgs/accessories-watch.svg';
+import Compare from './item-imgs/watch-imgs/compare-watch.svg';
 
 const ItemsContainer = styled.ul`
     display: flex;
@@ -27,11 +27,14 @@ const Item = styled.li`
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    padding-top: 5px;
+    height: 60px;
+
+    img {
+        height: 100%;
+    }
 
     span {
         font-size: 0.7rem;
-        margin-top: 5px;
     }
 
     .new {
