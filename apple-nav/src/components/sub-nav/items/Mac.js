@@ -52,7 +52,7 @@ const Mac = (props) => {
     return (
         
         <ItemsContainer>
-            <Tween from={{x: '100px', opacity: 0} } duration={0.5}>
+            <Tween from={{x: '200px', opacity: 0} } duration={0.5}>
             <Item>
                 <img src={Air} alt='macbook air' />
                 <span>MacBook Air</span>
