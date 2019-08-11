@@ -6,25 +6,40 @@ import styled, { keyframes } from 'styled-components';
 import { Tween } from 'react-gsap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { } from '@fortawesome/fontawesome-svg-core';
+import { } from '@fortawesome/fontawesome-svg-core';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
 import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
+import SearchIcon from './NavBar-Imgs/search_image_large.png';
+import BagIcon from './NavBar-Imgs/shopping_bag_image_large.svg';
+
 const StyledNavLink = styled.div`
     font-size: 1rem;
-    padding: 12px 22px;
-    transition: color 0.3s;
+    transition: filter 0.3s;
+    filter:brightness(100%);
     
     :hover {
-        color: #B7B7B7;
-        transition: color 0.1s;
+        filter:brightness(70%);
+        transition: filter 0.3s;
+    }
+
+    img {
+        width: 15px;
     }
 `;
 
 
 
-const Icon = styled.span`
+const Icon = styled.div`
     font-size: 1.3rem;
+
+  
+
+    .bag {
+        position: relative;
+        top: 6px;
+        width: 35px;
+    }
 `;
 
 const StyledLink = (props) => {
@@ -64,11 +79,11 @@ const StyledLink = (props) => {
             break;
 
         case 'search-icon':
-            content = (<Icon><FontAwesomeIcon icon={faSearch} /></Icon>);
+            content = (<Icon><img src={SearchIcon} alt='search' /></Icon>);
             break;
 
         case 'bag-icon':
-            content = (<Icon><FontAwesomeIcon icon={faShoppingBag} /></Icon>);
+            content = (<Icon><img className="bag" src={BagIcon} alt='shopping bag' /></Icon>);
             break;
 
         default: 
