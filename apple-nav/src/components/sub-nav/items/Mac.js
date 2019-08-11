@@ -15,12 +15,13 @@ import Mini from './item-imgs/mac-imgs/mac-mini.svg';
 import Compare from './item-imgs/mac-imgs/compare.svg';
 import Display from './item-imgs/mac-imgs/pro-display.svg';
 import Accessories from './item-imgs/mac-imgs/accessories.svg';
+import OS from './item-imgs/mac-imgs/os.svg';
 
 
 
 const ItemsContainer = styled.ul`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
     
 `;
@@ -31,6 +32,7 @@ const Item = styled.li`
     align-items: center;
     cursor: pointer;
     height: 60px;
+    margin: 0 15px;
 
     img {
         height: 100%;
@@ -59,46 +61,50 @@ const Mac = (props) => {
         
         <ItemsContainer>
             <Tween from={{x: '200px', opacity: 0} } duration={0.5}>
-            <Item>
-                <img src={Air} alt='macbook air' />
-                <span>MacBook Air</span>
-                <span className='new'>New</span>
-            </Item>
-            <Item>
-                <img src={Pro} alt='macbook pro' />
-                <span>MacBook Pro</span>
-                <span className='new'>New</span>
-            </Item>
-            <Item>
-                <img src={Imac} alt='imac' />
-                <span>iMac</span>
-            </Item>
-            <Item>
-                <img src={Imac} alt='imac pro' />
-                <span>iMac Pro</span>
-            </Item>
-            <Item>
-                <img src={MacPro} alt='Mac pro' />
-                <span>Mac Pro</span>
-                <span className='new'>New</span>
-            </Item>
-            <Item>
-                <img src={Mini} alt='mac mini' />
-                <span>Mac mini</span>
-            </Item>
-            <Item>
-                <img src={Compare} alt='compare macs' />
-                <span>Compare</span>
-            </Item>
-            <Item>
-                <img src={Display} alt='Pro display' />
-                <span>Pro Display XDR</span>
-                <span className='new'>New</span>
-            </Item>
-            <Item>
-                <img src={Accessories} alt='accessories for mac' />
-                <span>Accessories</span>
-            </Item>
+                <Item>
+                    <img src={Air} alt='macbook air' />
+                    <span>MacBook Air</span>
+                    <span className='new'>New</span>
+                </Item>
+                <Item>
+                    <img src={Pro} alt='macbook pro' />
+                    <span>MacBook Pro</span>
+                    <span className='new'>New</span>
+                </Item>
+                <Item>
+                    <img src={Imac} alt='imac' />
+                    <span>iMac</span>
+                </Item>
+                <Item>
+                    <img src={Imac} alt='imac pro' />
+                    <span>iMac Pro</span>
+                </Item>
+                <Item>
+                    <img src={MacPro} alt='Mac pro' />
+                    <span>Mac Pro</span>
+                    <span className='new'>New</span>
+                </Item>
+                <Item>
+                    <img src={Mini} alt='mac mini' />
+                    <span>Mac mini</span>
+                </Item>
+                <Item>
+                    <img src={Compare} alt='compare macs' />
+                    <span>Compare</span>
+                </Item>
+                <Item>
+                    <img src={Display} alt='Pro display' />
+                    <span>Pro Display XDR</span>
+                    <span className='new'>New</span>
+                </Item>
+                <Item>
+                    <img src={Accessories} alt='accessories for mac' />
+                    <span>Accessories</span>
+                </Item>
+                <Item>
+                    <img src={OS} alt='os' />
+                    <span>Mojave</span>
+                </Item>
             </Tween>
         </ItemsContainer>
     );

@@ -12,7 +12,7 @@ import TV from './items/TV.js';
 import Watch from './items/Watch.js';
 
 const SubNavContainer = styled.div`
-    background-color: ${props => props.color === 'dark' ? '#141414' : '#F7F7F7'};
+    background-color: ${props => props.color === 'dark' ? '#141414' : props.color === 'light' ? '#fff' : '#F7F7F7'};
     padding: 10px;
     height: 120px;
 `;
@@ -46,7 +46,7 @@ const SubNav = (props) => {
         }
     };
 
-    const SubNavColor = props.history.location.pathname === '/tv' ? 'dark' : 'normal';
+    const SubNavColor = props.history.location.pathname === '/tv' ? 'dark' : props.history.location.pathname === '/watch' ? 'light' : 'normal';
 
     return(
         <SubNavContainer color={SubNavColor}>

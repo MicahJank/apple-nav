@@ -19,7 +19,7 @@ import Accessories from './item-imgs/tv-imgs/accessories-tv.svg';
 
 const ItemsContainer = styled.ul`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
     
 `;
@@ -31,6 +31,7 @@ const Item = styled.li`
     align-items: center;
     cursor: pointer;
     height: 60px;
+    margin: 0 15px;
 
     img {
         height: 100%;

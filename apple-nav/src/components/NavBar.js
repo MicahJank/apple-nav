@@ -17,14 +17,19 @@ const Icon = styled.span`
     font-size: 1.3rem;
 `;
 
-const NavContainer = styled.div`
+const NavBackground = styled.div`
   width: 100%;
+  background-color: ${props => props.NavColor === 'black' ? 'black' : props.NavColor === 'dark' ? '#1E1E1F' : '#323232'}
+`;
+
+const NavContainer = styled.div`
+  width: 1015px;
   height: 50px;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: ${props => props.NavColor === 'black' ? 'black' : props.NavColor === 'dark' ? '#1E1E1F' : '#323232'}
+  margin: auto;
 
   a {
     color: #FAFAFA;
@@ -36,12 +41,15 @@ const NavContainer = styled.div`
   }
 `;
 
+
+
 const NavBar = (props) => {
 
   const NavColor = props.history.location.pathname === '/iphone' ? 'black' : props.history.location.pathname === '/tv' ? 'dark' : 'normal';
 
     return (
-        <NavContainer NavColor={NavColor} className='nav-container'>
+      <NavBackground NavColor={NavColor}>
+        <NavContainer className='nav-container'>
              <NavLink exact to={'/'}> <StyledLink content={'apple-icon'}/> </NavLink>
              <NavLink to={'/mac'}> <StyledLink content={'mac'}/></NavLink>
              <NavLink to={'/ipad'}> <StyledLink content={'ipad'}/></NavLink>
@@ -53,6 +61,7 @@ const NavBar = (props) => {
              <NavLink to={'/search'}> <StyledLink content={'search-icon'}/></NavLink>
              <NavLink to={'/shop'}> <StyledLink content={'bag-icon'}/></NavLink>     
         </NavContainer>
+      </NavBackground>
        
   
     );
