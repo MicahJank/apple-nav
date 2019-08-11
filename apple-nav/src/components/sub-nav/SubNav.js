@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-import { Tween } from 'react-gsap';
-
 import styled from 'styled-components';
 
 import Mac from './items/Mac.js';
@@ -16,20 +14,12 @@ import Watch from './items/Watch.js';
 const SubNavContainer = styled.div`
     background-color: #F7F7F7;
     padding: 10px;
-
 `;
-
-// GSAP animation funtion - will be called inside the SubNavItems because i want it to run everytime the SubNavItems is called. "component" is the item i want to animate
-const Animation = (component) => (
-    <Tween from={{x: '100px'} } duration={2}>
-        {component}
-    </Tween>
-);
 
 const SubNav = (props) => {
 
-    //TODO - Depending on which navlink is clicked in the navbar a different subcomponent should pop up with different icons that represent the sub component.
-
+    // this switch statement is used in place of multiple if/else conditions. Basically it checks the url by grabbing the history from props. After that
+    // it returns a different component based on what url the user is currently at.
     const SubNavItems = () => {
         switch(props.history.location.pathname) {
             case '/mac':
@@ -51,13 +41,12 @@ const SubNav = (props) => {
                 return (<Music />);
 
             default:
-                 return (<p>WHOOPSIE!</p>)
+                 return (<p>Never gonna give you up! Never gonna let you down!</p>) // User should not be able to get here.
         }
     };
 
     return(
         <SubNavContainer>
-            
             {SubNavItems()}
         </SubNavContainer>
     );
