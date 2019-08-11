@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Tween } from 'react-gsap';
 
-import XsHeader from './imgs/XS-Header.png';
+import Header from './imgs/watch-header.png';
 
 
 const HeaderContainer = styled.div`
@@ -19,14 +19,13 @@ const MainHeader = styled.img`
     object-fit: cover;
 `;
 
-const XSHeader = () => {
+const WatchHeader = () => {
 
     return (
             <HeaderContainer>
-                <MainHeader src={XsHeader} alt='main xs header'></MainHeader>
+                <MainHeader src={Header} alt='main watch header'></MainHeader>
             </HeaderContainer>
-
     );
 };
 
-export default XSHeader;
+export default WatchHeader;
