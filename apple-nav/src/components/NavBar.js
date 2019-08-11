@@ -31,6 +31,11 @@ const NavContainer = styled.div`
   align-items: baseline;
   margin: auto;
 
+  @media(max-width: 1070px) {
+    width: 100%;
+    
+}
+
   a {
     color: #FAFAFA;
     transition: color 0.3s;

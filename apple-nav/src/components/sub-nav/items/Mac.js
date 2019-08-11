@@ -23,6 +23,12 @@ const ItemsContainer = styled.ul`
     display: flex;
     justify-content: center;
     align-items: baseline;
+
+    @media(max-width: 1070px) {
+        width: 800px;
+        text-align: center;
+        margin: auto;
+    }
     
 `;
 

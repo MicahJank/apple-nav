@@ -14,9 +14,11 @@ const HeaderContainer = styled.div`
 `;
 
 const MainHeader = styled.img`
-    width: 1250px;
-    height: 800px;
-    object-fit: cover;   
+    object-fit: cover; 
+    
+    @media(max-width: 1070px) {
+        width: 800px;
+    }  
 `;
 
 const BuyMacHeader = () => {

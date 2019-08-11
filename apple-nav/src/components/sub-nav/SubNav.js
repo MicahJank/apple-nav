@@ -15,6 +15,9 @@ const SubNavContainer = styled.div`
     background-color: ${props => props.color === 'dark' ? '#141414' : props.color === 'light' ? '#fff' : '#F7F7F7'};
     padding: 10px;
     height: 120px;
+    overflow: hidden;
+
+    
 `;
 
 const SubNav = (props) => {
