@@ -9,6 +9,8 @@ import HomePage from './components/home-page/HomePage.js';
 import MacPage from './components/mac-page/MacPage.js';
 import IpadPage from './components/ipad-page/IpadPage.js';
 import IphonePage from './components/iphone-page/IphonePage.js';
+import WatchPage from './components/watch-page/WatchPage.js';
+import TVPage from './components/tv-page/TVPage.js';
 
 import './App.css';
 
@@ -24,6 +26,8 @@ function App() {
       <Route exact path={'/mac'} component={MacPage} />
       <Route exact path={'/ipad'} component={IpadPage} />
       <Route exact path={'/iphone'} component={IphonePage} />
+      <Route exact path={'/watch'} component={WatchPage} />
+      <Route exact path={'/tv'} component={TVPage} />
 
     </div>
     
