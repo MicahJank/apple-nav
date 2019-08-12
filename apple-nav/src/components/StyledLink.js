@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import { NavLink } from 'react-router-dom';
 
@@ -32,6 +32,8 @@ const StyledNavLink = styled.div`
 
 const Icon = styled.div`
     font-size: 1.3rem;
+
+    cursor: pointer;
     
     .bag {
         position: relative;
@@ -41,6 +43,8 @@ const Icon = styled.div`
 `;
 
 const StyledLink = (props) => {
+
+    const [visibility, setVisibility] = useState(false);
 
     let content = '';
     switch(props.content) {
@@ -77,7 +81,7 @@ const StyledLink = (props) => {
             break;
 
         case 'search-icon':
-            content = (<Icon><img src={SearchIcon} alt='search' /></Icon>);
+            content = (<Icon onClick={props.clickFunction}><img src={SearchIcon} alt='search' /></Icon>);
             break;
 
         case 'bag-icon':

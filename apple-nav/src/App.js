@@ -21,7 +21,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Route path={'/'} component={NavBar}/>
+      <Route path={['/']} component={NavBar}/>
       <Route exact path={['/mac', '/ipad', '/iphone', '/watch', '/tv', '/music']} component={SubNav} />
       <Route exact path={'/'} component={HomePage} />
       <Route exact path={'/mac'} component={MacPage} />

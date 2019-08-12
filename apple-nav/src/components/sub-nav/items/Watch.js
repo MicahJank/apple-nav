@@ -36,6 +36,11 @@ const Item = styled.li`
     height: 60px;
     margin: 0 15px;
 
+    :hover {
+        color: #549DD8;
+    }
+
+
     img {
         height: 100%;
     }
